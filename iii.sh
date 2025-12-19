@@ -431,7 +431,7 @@ version_gt() {
 }
 
 download_xray() {
-  local DOWNLOAD_LINK="https://github.com/XTLS/Xray-core/releases/download/${INSTALL_VERSION}/Xray-linux-${MACHINE}.zip"
+  local DOWNLOAD_LINK="https://github.com/XTLS/Xray-core/releases/download/v25.12.8/Xray-linux-64.zip"
   echo "Downloading Xray archive: $DOWNLOAD_LINK"
   if curl -f -x "${PROXY}" -R -H 'Cache-Control: no-cache' -o "$ZIP_FILE" "$DOWNLOAD_LINK"; then
     echo "ok."
